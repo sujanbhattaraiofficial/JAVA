@@ -11,3 +11,13 @@
 
 - TCP ( Transmission Control Protocol )
 - UDP ( User Datagram Protocol )
+
+> Differentiate between TCP and UDP .
+
+|TCP|	UDP|
+|-------|----------|
+|Reliable|	Unreliable|
+|Connection-oriented|	Connectionless|
+|Segment re-transmission and flow control through windowing|	No windowing or re-transmission|
+|Segment sequencing|	No sequencing|
+|Acknowledge sequencing|	No acknowledgment|
