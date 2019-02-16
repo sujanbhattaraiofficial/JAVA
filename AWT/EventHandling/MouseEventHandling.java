@@ -85,6 +85,6 @@ class MyWindowAdapter extends WindowAdapter{
 	}
 	
 	public void windowClosing(WindowEvent we){
-		obj.setVisible(true);
+		obj.dispose();
 	}
 }
