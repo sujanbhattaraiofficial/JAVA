@@ -80,11 +80,11 @@ class MyWindowAdapter extends WindowAdapter{
 	
 	MouseEventHandling obj = null;
 	
-	MyWindowAdapter(MouseEventHandling myWindow){
+	MyWindowAdapter(MouseEventHandling obj){
 		this.obj = obj;
 	}
 	
 	public void windowClosing(WindowEvent we){
-		obj.setVisible(false);
+		obj.setVisible(true);
 	}
 }
