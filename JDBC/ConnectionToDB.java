@@ -6,7 +6,7 @@ public class ConnetionToBD
        
 		
 			try {
-				myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/gces","root","");
+				myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/databasename","root","");
 				System.out.println("Sucessfully Connected");
 				
 			
