@@ -1,5 +1,5 @@
 import java.sql.*;
-public class ConnetionToBD
+public class ConnetionToDB
 {
     public static void main(String[] args) {
         Connection myConn = null;
