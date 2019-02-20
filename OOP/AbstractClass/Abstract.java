@@ -15,7 +15,7 @@ public class Abstract
 {
     public static void main(String[] args)
     {
-        B obj = new B();
+        B obj = new B(); // we cannot create object of interface.
         obj.print();
     }
 }

@@ -13,7 +13,7 @@ interface A
 public class Interface
 {
     public static void main(String[] args) {
-        B obj = new B(); // we cannot make object of interface.
+        B obj = new B(); // we cannot create object of interface.
         obj.show();
     }
 }
