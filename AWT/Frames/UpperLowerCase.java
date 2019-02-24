@@ -43,12 +43,16 @@ public class UpperLowerCase extends JFrame implements ActionListener
         {
             String s = t.getText();
             t.setText(s.toUpperCase());
+            p.setBackground(Color.blue);
+            f.add(p);
         }
         else
         {
            
             String s = t.getText();
              t.setText(s.toLowerCase()); 
+             p.setBackground(Color.RED);
+             f.add(p);
         }
     }
     public static void main(String[] args) {
