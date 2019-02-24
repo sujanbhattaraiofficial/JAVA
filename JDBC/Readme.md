@@ -1,3 +1,44 @@
+# Fundamental Steps in JDBC
+- Import JDBC packages.
+  
+          import java.sql.*;
+
+- Load and register the JDBC driver.
+  
+      Class.forName("com.jdbc.mysql.Driver");
+
+- Open a connection to the database.
+  
+      Connection conn = DriverManager.getConnection(URL, username, passwd);
+
+- Create a statement object to perform a query.
+
+      Statement myStmt = conn.createStatement();
+
+- Execute the statement object and return a query resultset.
+
+      ResultSet rset = myStmt.executeQuery
+      ("SELECT * FROM tablename");
+
+- Process the resultset.
+
+      while (rset.next())
+      {
+         READ DATA 
+      }
+
+- Close the resultset and statement objects.
+
+      myStmt.close();
+      rset.close();
+
+- Close the connection.
+
+      conn.close();
+
+
+
+
 # Connection Pooling in JAVA
 The connection pooling helps to utilize and efficiently re-use the database connection in a multithreading environment. The idea is to share the database connections (limited connections) with the users (unlimited numbers) in the most efficient way.
 
